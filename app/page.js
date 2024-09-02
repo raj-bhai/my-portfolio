@@ -9,7 +9,7 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql } from "react-icons/si";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills.js";
 
 export default function Home() {
   return (
