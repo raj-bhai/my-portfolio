@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center py-16">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-          Hi, I'm Rajkiran Kalwar
+          Hi, I&apos;m Rajkiran Kalwar
         </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
           I&apos;m a software developer passionate about creating impactful
