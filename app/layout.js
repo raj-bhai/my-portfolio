@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white text-center mt-4 shadow-md">
-          &copy; 2024 My Portfolio. All rights reserved.
+        &copy; {new Date().getFullYear()} Rajkiran Kalwar. All rights reserved.
         </footer>
       </body>
     </html>
