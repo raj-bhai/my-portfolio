@@ -1,5 +1,5 @@
 import React from 'react';
-import Skill from './Skill.js';  // Import the individual Skill component
+import Skill from './skill'; // Import the individual Skill component
 import { FaJsSquare, FaReact, FaNodeJs, FaCss3Alt, FaGithub, FaAws } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql } from 'react-icons/si';
 
