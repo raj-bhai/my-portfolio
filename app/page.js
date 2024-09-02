@@ -37,7 +37,7 @@ export default function Home() {
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
               A brief description of your project. What it does, the
-              technologies used, and why it’s awesome.
+              technologies used, and why it&apos;s awesome.
             </p>
             <Link
               href="/projects"
@@ -79,7 +79,7 @@ export default function Home() {
           Interested in Collaborating?
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-          I'm always open to discussing new projects, creative ideas, or
+          I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of your visions.
         </p>
         <Link
