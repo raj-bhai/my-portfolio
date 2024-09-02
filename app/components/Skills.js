@@ -1,7 +1,7 @@
 import React from 'react';
 import Skill from './skill'; // Import the individual Skill component
-import { FaJsSquare, FaReact, FaNodeJs, FaCss3Alt, FaGithub, FaAws } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql } from 'react-icons/si';
+import { FaJsSquare, FaReact, FaNodeJs, FaCss3Alt, FaGithub, FaAws, FaApple, FaAndroid } from 'react-icons/fa';
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiMysql, SiReact } from 'react-icons/si';
 
 export default function Skills() {
   return (
@@ -13,6 +13,7 @@ export default function Skills() {
         <Skill icon={FaJsSquare} name="JavaScript" color="text-yellow-500" />
         <Skill icon={FaReact} name="React.js" color="text-blue-500" />
         <Skill icon={SiNextdotjs} name="Next.js" color="text-black dark:text-white" />
+        <Skill icon={SiReact} name="React Native" color="text-blue-500" />
         <Skill icon={FaNodeJs} name="Node.js" color="text-green-500" />
         <Skill icon={FaCss3Alt} name="CSS" color="text-blue-600" />
         <Skill icon={SiTailwindcss} name="Tailwind CSS" color="text-teal-500" />
@@ -20,6 +21,8 @@ export default function Skills() {
         <Skill icon={SiMongodb} name="MongoDB" color="text-green-500" />
         <Skill icon={FaAws} name="DynamoDB" color="text-orange-500" />
         <Skill icon={SiMysql} name="MySQL" color="text-blue-500" />
+        <Skill icon={FaAndroid} name="Android Studio" color="text-green-500" />
+        <Skill icon={FaApple} name="Xcode" color="text-gray-800 dark:text-white" />
       </div>
     </section>
   );

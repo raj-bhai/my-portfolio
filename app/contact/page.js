@@ -3,7 +3,7 @@ import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
-      <section className="flex-grow text-center py-4">
+      <section className="flex-grow text-center">
         <h1 className="text-4xl font-bold mb-4">Let&apos;s Create Something Amazing Together</h1>
         <p className="text-lg mb-8">
           Whether you have a project in mind or just want to say hello, I&apos;d love to hear from you.
