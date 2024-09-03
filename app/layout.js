@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark" >
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +23,20 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Rajkiran Kalwar" />
         <link rel="canonical" href="https://www.iamrajklwr.com" />
         <title>{metadata.title}</title>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme');
+                if (!theme || theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
       </Head>
       <body className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <Header />

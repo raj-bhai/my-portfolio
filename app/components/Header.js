@@ -2,22 +2,30 @@
 
 import { useState, useEffect } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/solid';
-import Link from 'next/link'; // Import the Link component from Next.js
+import Link from 'next/link';
 
 export default function Header() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  // Initialize darkMode state based on localStorage or default to true
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem('theme') === 'dark';
+    }
+    return true; // Default to dark mode on first render
+  });
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   return (
     <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white shadow-md">

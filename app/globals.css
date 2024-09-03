@@ -31,3 +31,28 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+.btn-primary {
+  @apply inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white px-6 py-2 rounded-md shadow transition;
+  @apply hover:from-purple-600 hover:via-pink-600 hover:to-red-600;
+  @apply dark:from-purple-400 dark:via-pink-400 dark:to-red-400;
+  @apply dark:hover:from-purple-500 dark:hover:via-pink-500 dark:hover:to-red-500;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #8b5cf6, #ec4899, #f87171);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-hover:hover {
+  background: linear-gradient(to right, #7c3aed, #db2777, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
+
