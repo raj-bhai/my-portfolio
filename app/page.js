@@ -1,9 +1,23 @@
 import Link from "next/link";
 import Skills from "./components/Skills";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="container mx-auto p-4 relative">
+    <>
+          <Head>
+        <title>Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of Rajkiran Kalwar, a Full-Stack Developer specializing in React.js, Node.js, and mobile app development. Follow me on Instagram @iamrajklwr for insights and updates."
+        />
+        <meta
+          name="keywords"
+          content="Rajkiran Kalwar, iamrajklwr, Full-Stack Developer, React.js, Node.js, Mobile App Developer, iOS, Android"
+        />
+        <link rel="canonical" href="https://www.iamrajklwr.com/" />
+      </Head>
+      <main className="container mx-auto p-4 relative">
       {/* Hero Section */}
       <section className="text-center py-16">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
@@ -90,5 +104,6 @@ export default function Home() {
         </Link>
       </section>
     </main>
+    </>
   );
 }

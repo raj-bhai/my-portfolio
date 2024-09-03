@@ -1,6 +1,21 @@
+import next from "next";
+
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+          <Head>
+        <title>About Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
+        <meta
+          name="description"
+          content="Learn more about Rajkiran Kalwar, a Full-Stack Developer skilled in React.js, Node.js, mobile app development, and more. Explore my journey, skills, and passions."
+        />
+        <meta
+          name="keywords"
+          content="About Rajkiran Kalwar, Full-Stack Developer, iamrajklwr, React.js, Node.js, iOS Developer, Android Developer"
+        />
+        <link rel="canonical" href="https://www.iamrajklwr.com/about" />
+      </Head>
+      <div className="min-h-screen flex flex-col">
       {/* First Section with Gradient Background */}
       <section className="flex-grow text-center py-20 px-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-800 dark:via-purple-800 dark:to-pink-800 text-white">
         <div className="max-w-4xl mx-auto">
@@ -36,5 +51,6 @@ export default function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }

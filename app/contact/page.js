@@ -1,8 +1,22 @@
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
+import Head from 'next/head';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+          <Head>
+        <title>Contact Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
+        <meta
+          name="description"
+          content="Get in touch with Rajkiran Kalwar, a Full-Stack Developer. Whether you have a project in mind or just want to connect, reach out via email or follow me on Instagram @iamrajklwr."
+        />
+        <meta
+          name="keywords"
+          content="Contact Rajkiran Kalwar, Full-Stack Developer, iamrajklwr, React.js, Node.js, Email, Instagram"
+        />
+        <link rel="canonical" href="https://www.iamrajklwr.com/contact" />
+      </Head>
+      <div className="min-h-screen flex flex-col">
       <section className="flex-grow text-center">
         <h1 className="text-4xl font-bold mb-4">Let&apos;s Create Something Amazing Together</h1>
         <p className="text-lg mb-8">
@@ -40,5 +54,6 @@ export default function Contact() {
         </div>
       </section>
     </div>
+    </>
   );
 }
