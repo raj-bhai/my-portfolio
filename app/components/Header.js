@@ -11,7 +11,7 @@ export default function Header() {
     if (typeof window !== "undefined") {
       return localStorage.getItem('theme') === 'dark';
     }
-    return true; // Default to dark mode on first render
+    return localStorage.getItem('theme') === 'dark' // Default to dark mode on first render
   });
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Skills from "./components/Skills";
 import Head from "next/head";
 import FeaturedProjects from "./components/FeaturedProjects";
+import ServicesSection from "./components/ServicesSection";
 
 export default function Home() {
   return (
@@ -36,6 +37,8 @@ export default function Home() {
             Learn More About Me
           </Link>
         </section>
+
+        <ServicesSection/>
 
         <Skills />
 
