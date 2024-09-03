@@ -1,57 +1,89 @@
-import next from "next";
 import Head from "next/head";
 
 export default function About() {
   return (
     <>
-          <Head>
+      <Head>
         <title>About Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
         <meta
           name="description"
-          content="Learn more about Rajkiran Kalwar, a Full-Stack Developer skilled in React.js, Node.js, mobile app development, and more. Explore my journey, skills, and passions."
+          content="Learn more about Rajkiran Kalwar, a Full-Stack Developer with expertise in React.js, Node.js, mobile app development, and SEO. Explore my journey, skills, and contributions to startups, MNCs, and small businesses."
         />
         <meta
           name="keywords"
-          content="About Rajkiran Kalwar, Full-Stack Developer, iamrajklwr, React.js, Node.js, iOS Developer, Android Developer"
+          content="Rajkiran Kalwar, Full-Stack Developer, React.js, Node.js, Mobile App Developer, SEO, iamrajklwr"
         />
         <link rel="canonical" href="https://www.iamrajklwr.com/about" />
       </Head>
       <div className="min-h-screen flex flex-col">
-      {/* First Section with Gradient Background */}
-      <section className="flex-grow text-center py-20 px-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-800 dark:via-purple-800 dark:to-pink-800 text-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6">Who Am I?</h1>
-          <p className="text-lg mb-6">
-            Hello! I&apos;m Rajkiran Kalwar, a dedicated software developer with a knack for crafting innovative solutions to challenging problems. My journey in the tech world has been fueled by a deep curiosity and a passion for understanding how things work, leading me to where I am today.
-          </p>
-          <p className="text-lg mb-6">
-            My expertise lies in full-stack development, where I seamlessly blend creativity with technical skills to create applications that not only work efficiently but also offer an engaging user experience. Whether it&apos;s designing intuitive front-ends, building robust back-ends, or developing cutting-edge mobile apps for iOS and Android, I thrive on bringing ideas to life.
-          </p>
-          <p className="text-lg mb-8">
-            Outside of coding, I am constantly exploring new technologies, staying updated with the latest trends in the tech industry, and working on personal projects that challenge my skills. I believe in the power of continuous learning and am always eager to embrace new opportunities that contribute to my growth as a developer.
-          </p>
-        </div>
-      </section>
+        {/* First Section with Gradient Background */}
+        <section className="flex-grow text-center py-20 px-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-800 dark:via-purple-800 dark:to-pink-800 text-white">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl font-bold mb-6">Who Am I?</h1>
+            <p className="text-lg mb-6">
+              Hello! I&apos;m Rajkiran Kalwar, a Full-Stack Developer with over
+              3 years of experience in building robust web and mobile
+              applications. My journey in the tech world has allowed me to work
+              with multinational corporations, dynamic startups, and small
+              businesses, helping them grow by taking their operations online.
+            </p>
+            <p className="text-lg mb-6">
+              I specialize in full-stack development, where I combine creative
+              design with efficient coding to deliver user-centric digital
+              experiences. Whether it&apos;s building intuitive front-ends,
+              designing scalable back-end systems, or developing mobile apps for
+              iOS and Android, I thrive on turning ideas into impactful
+              solutions.
+            </p>
+            <p className="text-lg mb-8">
+              Outside of coding, I am passionate about continuous learning,
+              staying ahead of the latest tech trends, and applying best
+              practices in SEO to ensure that the products I create are not only
+              functional but also discoverable by the right audience.
+            </p>
+          </div>
+        </section>
 
-      {/* Second Section with Light/Dark Theme Support */}
-      <section className="flex-grow text-center py-20 px-4 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">My Philosophy</h2>
-          <p className="text-lg mb-6">
-            I believe that exceptional software is built on a foundation of collaboration, creativity, and a deep understanding of the user&apos;s needs. My approach to development is comprehensive; I consider every stage of the software lifecycle, from initial brainstorming to final deployment, ensuring that each step is executed with precision.
-          </p>
-          <p className="text-lg mb-6">
-            My experience extends beyond just coding. I bring to the table a strong understanding of mobile app development for both iOS and Android platforms. I ensure that the apps I create are not only visually stunning but also optimized for performance, providing users with a smooth and satisfying experience.
-          </p>
-          <p className="text-lg mb-8">
-            I am committed to writing clean, maintainable code that addresses current challenges while being adaptable for future needs. My goal is to develop software that not only meets today&apos;s demands but also anticipates the needs of tomorrow.
-          </p>
-          <p className="text-lg mb-8">
-            Let&apos;s collaborate to turn your vision into a reality. Whether you&apos;re seeking a developer to build your next project or just want to connect and share ideas, I&apos;m always open to new conversations.
-          </p>
-        </div>
-      </section>
-    </div>
+        {/* Second Section with Light/Dark Theme Support */}
+        <section className="flex-grow text-center py-20 px-4 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6">My Expertise</h2>
+            <p className="text-lg mb-6">
+              Over the years, I&apos;ve developed a deep understanding of both
+              the technical and business aspects of software development. My
+              expertise includes:
+            </p>
+            <ul className="list-disc list-inside text-left mx-auto mb-6 text-lg">
+              <li>
+                <strong>Web Development:</strong> Creating responsive, scalable
+                web applications using technologies like Next.js, React.js, and
+                Node.js.
+              </li>
+              <li>
+                <strong>Mobile App Development:</strong> Developing
+                cross-platform mobile applications with React Native for both
+                iOS and Android.
+              </li>
+              <li>
+                <strong>SEO Optimization:</strong> Implementing SEO best
+                practices to ensure that digital products rank highly on search
+                engines and attract organic traffic.
+              </li>
+              <li>
+                <strong>Business Growth:</strong> Helping small businesses go
+                digital by developing custom solutions that drive growth and
+                improve operational efficiency.
+              </li>
+            </ul>
+            <p className="text-lg mb-8">
+              My goal is to deliver clean, maintainable code that solves current
+              challenges while being adaptable to future needs. I believe in the
+              power of collaboration and am committed to turning your vision
+              into a reality through innovative, scalable software solutions.
+            </p>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
