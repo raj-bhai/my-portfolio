@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/solid';
+import { FaUserTie } from 'react-icons/fa'; // Import a relevant icon
 import Link from 'next/link';
 
 export default function Header() {
@@ -30,8 +31,8 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-semibold">
-          <Link href="/" className="hover:underline">My Portfolio</Link>
+        <div className="text-lg font-semibold flex items-center space-x-2">
+          <FaUserTie className="h-8 w-8" /> {/* Icon for coder or profile */}
         </div>
         <div className="space-x-4 flex items-center">
           <Link href="/" className="hover:underline">Home</Link>
