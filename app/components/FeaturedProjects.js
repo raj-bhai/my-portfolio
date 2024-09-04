@@ -1,6 +1,14 @@
-import Link from 'next/link';
-import { FaReact, FaAndroid, FaNodeJs } from 'react-icons/fa'; // React, Android, Node.js
-import { SiRedux, SiNextdotjs, SiFirebase, SiTailwindcss } from 'react-icons/si'; // Redux, Next.js, Firebase, Tailwind CSS
+import Link from "next/link";
+import { FaReact, FaAndroid, FaNodeJs, FaJs, FaAws } from "react-icons/fa"; // React, Android, Node.js
+import {
+  SiRedux,
+  SiNextdotjs,
+  SiFirebase,
+  SiTailwindcss,
+  SiTypescript
+} from "react-icons/si"; // Redux, Next.js, Firebase, Tailwind CSS
+import IPhoneContainer from "./IPhoneContainer";
+import DesktopContainer from "./DesktopContainer";
 
 export default function FeaturedProjects() {
   return (
@@ -8,88 +16,92 @@ export default function FeaturedProjects() {
       <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center">
         Featured Projects
       </h2>
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Project 1 - Beyobo Mobile App (React Native) */}
-        <div className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 dark:from-indigo-700 dark:via-purple-700 dark:to-pink-700 rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-semibold text-white mb-2">
-            Beyobo Mobile App - B2B E-commerce Marketplace
-          </h3>
-          <p className="text-gray-100 mb-4">
-            Beyobo is a B2B e-commerce marketplace connecting retailers with global suppliers to buy trending products. I worked as a frontend developer for the mobile app using React Native, collaborating with Ensologic Commerce and the IT team to create a seamless mobile experience.
-          </p>
-          <div className="flex items-center space-x-4 mb-4">
-            <FaReact className="text-white text-2xl" title="React Native" />
-            <SiRedux className="text-white text-2xl" title="Redux" />
-            <FaAndroid className="text-white text-2xl" title="Android Studio" />
-          </div>
-          <Link
-            href="https://play.google.com/store/search?q=beyobo&c=apps&hl=en"
-            className="text-white hover:underline"
-          >
-            View on Play Store
-          </Link>
-        </div>
 
-        {/* Project 2 - Beyobo Web App (Next.js) */}
-        <div className="bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 dark:from-teal-700 dark:via-blue-700 dark:to-indigo-700 rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-semibold text-white mb-2">
-            Beyobo Web App - B2B E-commerce Marketplace
-          </h3>
-          <p className="text-gray-100 mb-4">
-            The Beyobo Web App allows retailers to purchase products from global suppliers. I developed the frontend of this web platform using Next.js, ensuring a fast and responsive user experience for global buyers.
-          </p>
-          <div className="flex items-center space-x-4 mb-4">
-            <SiNextdotjs className="text-white text-2xl" title="Next.js" />
-            <FaNodeJs className="text-white text-2xl" title="Node.js" />
-            <SiRedux className="text-white text-2xl" title="Redux" />
-          </div>
-          <Link
-            href="https://retailer.beyobo.com/"
-            className="text-white hover:underline"
-          >
-            View Web App
-          </Link>
-        </div>
+      {/* Use flex and justify-center to align items horizontally */}
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+        {/* iPhone Container */}
 
-        {/* Project 3 - FitLife Tracker */}
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 dark:from-purple-700 dark:via-pink-700 dark:to-red-700 rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-semibold text-white mb-2">
-            FitLife Tracker
-          </h3>
-          <p className="text-gray-100 mb-4">
-            A fitness and nutrition tracking application. Users can log workouts, track nutrition, and monitor their progress over time. Built using Next.js, Tailwind CSS, and Firebase for real-time data updates.
-          </p>
-          <div className="flex items-center space-x-4 mb-4">
-            <SiNextdotjs className="text-white text-2xl" title="Next.js" />
-            <SiTailwindcss className="text-white text-2xl" title="Tailwind CSS" />
-            <SiFirebase className="text-white text-2xl" title="Firebase" />
-          </div>
-          <Link
-            href="/projects/fitlife-tracker"
-            className="text-white hover:underline"
-          >
-            View Project
-          </Link>
-        </div>
 
-        {/* Coming Soon - Project 4 */}
-        <div className="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900 rounded-lg shadow-md p-6 flex flex-col justify-center items-center">
-          <h3 className="text-xl font-semibold dark:text-white text-gray-800 mb-2">
-            Project 4 - Coming Soon
-          </h3>
-          <p className="text-gray-700 dark:text-gray-100 mb-4 text-center">
-            Stay tuned for more details on this upcoming project!
-          </p>
-          <div className="text-gray-500 dark:text-gray-400 cursor-not-allowed">
-            <span>Coming Soon</span>
-          </div>
-        </div>
+        <IPhoneContainer className="pb-12">
+  {/* Project Name */}
+  <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 text-center mt-3">
+    Beyobo Mobile App (React-Native)
+  </h3>
+
+  {/* Technology Icons inside White Circles with Proper Multiline Alignment */}
+  <div className="flex flex-wrap justify-center gap-4 mb-4 mt-4">
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <FaReact className="text-[#61DAFB] text-3xl sm:text-4xl" title="React Native" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <SiRedux className="text-[#764ABC] text-3xl sm:text-4xl" title="Redux" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <FaAndroid className="text-[#3DDC84] text-3xl sm:text-4xl" title="Android Studio" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <SiTypescript className="text-[#3178C6] text-3xl sm:text-4xl" title="TypeScript" />
+    </div>
+  </div>
+
+  {/* View on Play Store Button */}
+  <div className="flex justify-center mt-auto">
+    <a
+      href="https://play.google.com/store/apps/details?id=in.zaadu.twa&hl=en"
+      className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-xl hover:bg-blue-200 transition duration-200 ease-in-out transform hover:scale-105"
+    >
+      View on Play Store
+    </a>
+  </div>
+</IPhoneContainer>
+
+
+
+
+
+
+        {/* Desktop Container */}
+ 
+
+        <DesktopContainer>
+  {/* Project Name */}
+  <h3 className=" text-xl sm:text-2xl font-semibold text-white mb-6 text-center">
+    Beyobo - B2B E-Commerce Marketplace (NextJs)
+  </h3>
+
+  {/* Technology Icons inside White Circles with Responsive Sizes */}
+  <div className="flex justify-center items-center space-x-4 sm:space-x-8 mb-8">
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <SiNextdotjs className="text-black text-3xl sm:text-4xl" title="Next.js" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <SiRedux className="text-[#764ABC] text-3xl sm:text-4xl" title="Redux" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <FaJs className="text-[#F7DF1E] text-3xl sm:text-4xl" title="JavaScript" />
+    </div>
+    <div className="bg-white p-2 sm:p-3 rounded-full">
+      <FaAws className="text-[#FF9900] text-3xl sm:text-4xl" title="AWS" />
+    </div>
+  </div>
+
+  {/* View Web App Button */}
+  <div className="flex justify-center">
+    <Link href="https://retailer.beyobo.com/"
+      className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-xl hover:bg-blue-200 transition duration-200 ease-in-out transform hover:scale-105">
+        View Web App
+    </Link>
+  </div>
+</DesktopContainer>
+
+
+
+
       </div>
+
+      {/* See All Projects Link */}
       <div className="text-center mt-8">
-        <Link
-          href="/projects"
-          className="text-gradient "
-        >
+        <Link href="/projects" className="text-gradient">
           See All Projects
         </Link>
       </div>
