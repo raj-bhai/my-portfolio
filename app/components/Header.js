@@ -5,6 +5,7 @@ import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 import { FaUserTie } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -14,11 +15,7 @@ export default function Header() {
     return true;
   });
 
-  const [activePath, setActivePath] = useState("");
-
-  useEffect(() => {
-    setActivePath(window.location.pathname);
-  }, []);
+  const pathname = usePathname(); // Use Next.js hook to get the current path.
 
   useEffect(() => {
     if (darkMode) {
@@ -35,18 +32,21 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white shadow-md">
+    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white shadow-md z-50">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Icon and branding */}
-        <div className="flex items-center space-x-2 w-14 ">
-          <Image
-            src="/images/profile-icon.png"
-            alt="Rajkiran Kalwar"
-            layout="responsive"
-            width={50}
-            height={50}
-            priority
-          />
+        <div className="flex items-center space-x-2 w-14">
+          <Link href="/">
+            <Image
+              src="/images/profile-icon.png"
+              alt="Rajkiran Kalwar"
+              layout="responsive"
+              width={50}
+              height={50}
+              priority
+              className="cursor-pointer" // Optional: Add a pointer cursor to indicate it's clickable
+            />
+          </Link>
         </div>
 
         {/* Navigation links */}
@@ -54,52 +54,52 @@ export default function Header() {
           <Link
             href="/"
             className={`relative font-medium transition-all ${
-              activePath === "/"
+              pathname === "/"
                 ? "text-yellow-300 dark:text-yellow-400"
                 : "text-white dark:text-gray-300"
             } hover:text-yellow-300 dark:hover:text-yellow-400`}
           >
             Home
-            {activePath === "/" && (
+            {pathname === "/" && (
               <span className="absolute left-0 bottom-0 h-[2px] w-full bg-yellow-300 dark:bg-yellow-400 transform scale-x-100 transition-transform origin-left"></span>
             )}
           </Link>
           <Link
             href="/about"
             className={`relative font-medium transition-all ${
-              activePath === "/about"
+              pathname === "/about"
                 ? "text-yellow-300 dark:text-yellow-400"
                 : "text-white dark:text-gray-300"
             } hover:text-yellow-300 dark:hover:text-yellow-400`}
           >
             About
-            {activePath === "/about" && (
+            {pathname === "/about" && (
               <span className="absolute left-0 bottom-0 h-[2px] w-full bg-yellow-300 dark:bg-yellow-400 transform scale-x-100 transition-transform origin-left"></span>
             )}
           </Link>
           <Link
             href="/projects"
             className={`relative font-medium transition-all ${
-              activePath === "/projects"
+              pathname === "/projects"
                 ? "text-yellow-300 dark:text-yellow-400"
                 : "text-white dark:text-gray-300"
             } hover:text-yellow-300 dark:hover:text-yellow-400`}
           >
             Projects
-            {activePath === "/projects" && (
+            {pathname === "/projects" && (
               <span className="absolute left-0 bottom-0 h-[2px] w-full bg-yellow-300 dark:bg-yellow-400 transform scale-x-100 transition-transform origin-left"></span>
             )}
           </Link>
           <Link
             href="/contact"
             className={`relative font-medium transition-all ${
-              activePath === "/contact"
+              pathname === "/contact"
                 ? "text-yellow-300 dark:text-yellow-400"
                 : "text-white dark:text-gray-300"
             } hover:text-yellow-300 dark:hover:text-yellow-400`}
           >
             Contact
-            {activePath === "/contact" && (
+            {pathname === "/contact" && (
               <span className="absolute left-0 bottom-0 h-[2px] w-full bg-yellow-300 dark:bg-yellow-400 transform scale-x-100 transition-transform origin-left"></span>
             )}
           </Link>

@@ -42,55 +42,6 @@ export default function Home() {
 
         <Skills />
 
-        {/* Other Sections */}
-        {/* Featured Projects Section */}
-        {/* <section className="py-16">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center">
-          Featured Projects
-        </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-              Project 1
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              A brief description of your project. What it does, the
-              technologies used, and why it&apos;s awesome.
-            </p>
-            <Link
-              href="/projects"
-              className="text-indigo-600 dark:text-indigo-400 hover:underline"
-            >
-              View Project
-            </Link>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-              Project 2
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              Another project with a short description. Highlight the main
-              features and technology stack.
-            </p>
-            <Link
-              href="/projects"
-              className="text-indigo-600 dark:text-indigo-400 hover:underline"
-            >
-              View Project
-            </Link>
-          </div>
-        </div>
-        <div className="text-center mt-8">
-          <Link
-            href="/projects"
-            className="text-indigo-600 dark:text-indigo-400 hover:underline"
-          >
-            See All Projects
-          </Link>
-        </div>
-      </section> */}
-
         <FeaturedProjects />
 
         {/* Call to Action Section */}
