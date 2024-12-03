@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Skills from "./components/Skills";
+import Skills from "@/components/Skills";
 import Head from "next/head";
-import FeaturedProjects from "./components/FeaturedProjects";
-import ServicesSection from "./components/ServicesSection";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
