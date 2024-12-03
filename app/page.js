@@ -95,10 +95,10 @@ export default function Home() {
 
         {/* Call to Action Section */}
         <section className="py-16 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <h2 className="text-3xl font-bold text-gray-200 sm:text-gray-900 dark:text-gray-400 sm:dark:text-gray-700 mb-4">
             Interested in Collaborating?
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
+          <p className="text-lg text-gray-300 sm:text-gray-700 dark:text-gray-300 sm:dark:text-gray-600 mb-8">
             I&apos;m always open to discussing new projects, creative ideas, or
             opportunities to be part of your visions.
           </p>
