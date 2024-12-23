@@ -237,7 +237,7 @@ const ProjectsData = [
     description:
       "HealthSightTracker is a mobile healthcare app tailored to streamline patient management and provide secure access to medical data for doctors and attorneys. The app includes features like appointment scheduling, patient records management, and data visualization while ensuring compliance with healthcare regulations such as HIPAA.",
     technologies: ["React Native", "Node.js", "MySQL"],
-    screenshots: ["/images/healthsighttracker-1.png", "/images/healthsighttracker-2.png"], // Add actual screenshots if available
+    screenshots: [], // Add actual screenshots if available
     role: "Mobile App Developer, Backend Developer",
     clientRequirements:
       "The client required a mobile app for healthcare professionals with secure patient data handling, compliance with HIPAA regulations, and efficient database management.",
