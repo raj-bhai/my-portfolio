@@ -1,28 +1,6 @@
 import Link from "next/link";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub, FaAngular, FaJava, FaVuejs, FaPython, FaDocker, FaGitAlt, FaSass } from "react-icons/fa"; 
-import { SiNextdotjs, SiGraphql, SiPostgresql, SiFirebase, SiMongodb } from "react-icons/si"; 
+import TechnologyIcons from "./TechnologyIcons";
 
-// Create a mapping for technology icons with colors
-const technologyIcons = {
-  React: { icon: FaReact, color: "#61DAFB" }, // React color
-  "Node.js": { icon: FaNodeJs, color: "#68A063" }, // Node.js color
-  MongoDB: { icon: SiMongodb, color: "#4DB33D" }, // MongoDB color
-  "Next.js": { icon: SiNextdotjs, color: "#000000" }, // Next.js color
-  GraphQL: { icon: SiGraphql, color: "#E10098" }, // GraphQL color
-  PostgreSQL: { icon: SiPostgresql, color: "#336791" }, // PostgreSQL color
-  "React Native": { icon: FaReact, color: "#61DAFB" }, // React Native using React icon color
-  Firebase: { icon: SiFirebase, color: "#FFCA28" }, // Firebase color
-  Angular: { icon: FaAngular, color: "#DD0031" }, // Angular color
-  Java: { icon: FaJava, color: "#F8981D" }, // Java color
-  Vue: { icon: FaVuejs, color: "#42b883" }, // Vue color
-  Python: { icon: FaPython, color: "#306998" }, // Python color
-  Docker: { icon: FaDocker, color: "#2496ED" }, // Docker color
-  GitHub: { icon: FaGithub, color: "#181717" }, // GitHub color
-  Git: { icon: FaGitAlt, color: "#F1502F" }, // Git color
-  CSS: { icon: FaCss3Alt, color: "#1572B6" }, // CSS color
-  HTML: { icon: FaHtml5, color: "#E44D26" }, // HTML color
-  Sass: { icon: FaSass, color: "#CD6799" }, // Sass color
-};
 
 const ProjectCard = ({ project }) => {
   return (
@@ -31,7 +9,13 @@ const ProjectCard = ({ project }) => {
       <h2 className="text-2xl font-semibold mb-4 hover:text-yellow-500">{project.title}</h2>
 
       {/* Project Introduction */}
-      <p className="text-gray-600 dark:text-gray-300 mb-4">{project.introduction}</p>
+      <p className="text-gray-600 dark:text-gray-300 text-ellipsis overflow-hidden mb-4"
+                style={{
+                  WebkitLineClamp: 2,
+                  display: "-webkit-box",
+                  WebkitBoxOrient: "vertical",
+                }}
+      >{project.introduction}</p>
 
       {/* Project Description (Truncated to two lines) */}
       <div className="mb-4">
@@ -53,7 +37,7 @@ const ProjectCard = ({ project }) => {
         <strong className="text-lg">Technologies Used:</strong>
         <ul className="list-none flex flex-wrap justify-center gap-2">
           {project.technologies.map((tech, index) => {
-            const { icon: Icon, color } = technologyIcons[tech] || {};
+            const { icon: Icon, color } = TechnologyIcons[tech] || {};
             return (
               <li key={index} className="flex items-center text-gray-500 dark:text-gray-400">
                 {Icon && <Icon className="mr-2 text-xl" style={{ color: color }} />}
