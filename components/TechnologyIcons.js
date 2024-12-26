@@ -1,5 +1,5 @@
 import { FaReact, FaAws, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub, FaAngular, FaJava, FaVuejs, FaPython, FaDocker, FaGitAlt, FaSass } from "react-icons/fa"; 
-import { SiNextdotjs, SiGraphql, SiPostgresql, SiFirebase, SiMongodb, SiSocketdotio, SiAgora, SiRazorpay, SiMysql } from "react-icons/si"; 
+import { SiNextdotjs, SiGraphql, SiPostgresql, SiFirebase, SiMongodb, SiSocketdotio, SiAgora, SiRazorpay, SiMysql,SiTailwindcss } from "react-icons/si"; 
 import { SiRedux } from "react-icons/si";
 
 // Create a mapping for technology icons with colors
@@ -29,6 +29,7 @@ const TechnologyIcons = {
   Socket: { icon: SiSocketdotio, color: "#010101" }, // Socket.io color (black)
   Razorpay: { icon: SiRazorpay, color: "#3C8EFC" }, // Razorpay color (blue)
   MySQL: { icon: SiMysql, color: "#00758F" }, // MySQL color
+  TailwindCSS: { icon: SiTailwindcss, color: "#38BDF8" }, // TailwindCSS color (blue)
 };
 
 export default TechnologyIcons;
