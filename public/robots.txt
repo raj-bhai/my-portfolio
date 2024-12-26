@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.iamrajklwr.com
+
+# Sitemaps
+Sitemap: https://www.iamrajklwr.com/sitemap.xml
