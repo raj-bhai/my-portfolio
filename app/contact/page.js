@@ -1,19 +1,15 @@
+"use client"
 import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 import Head from 'next/head';
 
 export default function Contact() {
   return (
     <>
-          <Head>
-        <title>Contact Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
-        <meta
-          name="description"
-          content="Get in touch with Rajkiran Kalwar, a Full-Stack Developer. Whether you have a project in mind or just want to connect, reach out via email or follow me on Instagram @iamrajklwr."
-        />
-        <meta
-          name="keywords"
-          content="Contact Rajkiran Kalwar, Full-Stack Developer, iamrajklwr, React.js, Node.js, Email, Instagram"
-        />
+      <Head>
+        <title>Contact Rajkiran Kalwar - Full-Stack Developer</title>
+        <meta name="description" content="Get in touch with Rajkiran Kalwar, a Full-Stack Developer. Contact me via email or follow me on social media." />
+        <meta name="keywords" content="Contact Rajkiran Kalwar, Full-Stack Developer, Email, Social Media" />
+        <meta name="author" content="Rajkiran Kalwar" />
         <link rel="canonical" href="https://www.iamrajklwr.com/contact" />
       </Head>
       <div className="min-h-screen flex flex-col">

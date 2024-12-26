@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import ProjectsData from "@/data/projectsData";
 import ProjectDetail from "@/components/ProjectDetail";
+import Head from 'next/head';
 
 export default function ProjectPage() {
   const { id } = useParams(); 
@@ -18,5 +19,18 @@ export default function ProjectPage() {
     );
   }
 
-  return <ProjectDetail project={project} />;
+  const keywords = `${project.title}, ${project.technologies.join(', ')}, ${project.role}, ${project.introduction}`;
+
+  return (
+    <>
+        <Head>
+        <title>{project.title} - Project by Rajkiran Kalwar</title>
+        <meta name="description" content={project.description} />
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content="Rajkiran Kalwar" />
+        <link rel="canonical" href={`https://www.iamrajklwr.com/projects/${id}`} />
+      </Head>
+    <ProjectDetail project={project} />
+    </>
+  )
 }

@@ -4,9 +4,11 @@ import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "Rajkiran Kalwar - Full-Stack Developer | iamrajklwr",
+  title: "Rajkiran Kalwar - Full-Stack Developer | React.js, Next.js, Node.js, Mobile App Development",
   description:
-    "Rajkiran Kalwar - Full-Stack Developer skilled in React.js, Node.js, and mobile app development. Follow me on Instagram @iamrajklwr for tech insights.",
+    "Explore the portfolio of Rajkiran Kalwar, a Full-Stack Developer specializing in React.js, Node.js, and mobile app development for iOS & Android. Let's work together to bring your ideas to life!",
+  url: "https://www.iamrajklwr.com",
+  image: "https://www.iamrajklwr.com/images/profile-icon.png",
 };
 
 export default function RootLayout({ children }) {
@@ -18,11 +20,26 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta
           name="keywords"
-          content="Rajkiran Kalwar, iamrajklwr, Full-Stack Developer, React.js, Node.js, iOS Developer, Android Developer, React-Native, React-Native Developer"
+          content="Rajkiran Kalwar, Rajkiran Kalowar, iamrajklwr, Full-Stack Developer, React.js, Next.js, Node.js, iOS Developer, Android Developer, React-Native, React-Native Developer"
         />
         <meta name="author" content="Rajkiran Kalwar" />
-        <link rel="canonical" href="https://www.iamrajklwr.com" />
+        <link rel="canonical" href={metadata.url} />
         <title>{metadata.title}</title>
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:url" content={metadata.url} />
+        <meta property="og:image" content={metadata.image} />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:url" content={metadata.url} />
+        <meta name="twitter:image" content={metadata.image} />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
