@@ -1,7 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Rajkiran Kalwar - Full-Stack Developer | React.js, Next.js, Node.js, Mobile App Development",
