@@ -101,7 +101,7 @@ export default function FeaturedProjects() {
 
       {/* See All Projects Link */}
       <div className="text-center mt-8">
-        <Link href="/projects" className="text-gradient">
+        <Link href="/projects" className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-xl hover:bg-blue-200 transition duration-200 ease-in-out transform hover:scale-105">
           See All Projects
         </Link>
       </div>
