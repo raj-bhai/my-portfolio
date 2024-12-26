@@ -4,15 +4,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
-        <meta
-          name="description"
-          content="Learn more about Rajkiran Kalwar, a Full-Stack Developer with expertise in React.js, Node.js, mobile app development, and SEO. Explore my journey, skills, and contributions to startups, MNCs, and small businesses."
-        />
-        <meta
-          name="keywords"
-          content="Rajkiran Kalwar, Full-Stack Developer, React.js, Node.js, Mobile App Developer, SEO, iamrajklwr"
-        />
+        <title>About Rajkiran Kalwar - Full-Stack Developer</title>
+        <meta name="description" content="Learn more about Rajkiran Kalwar, a Full-Stack Developer with expertise in various technologies and a passion for building innovative solutions." />
+        <meta name="keywords" content="About Rajkiran Kalwar, Full-Stack Developer, Skills, Experience" />
+        <meta name="author" content="Rajkiran Kalwar" />
         <link rel="canonical" href="https://www.iamrajklwr.com/about" />
       </Head>
       <div className="min-h-screen flex flex-col">

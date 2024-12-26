@@ -8,16 +8,39 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Rajkiran Kalwar - Full-Stack Developer | iamrajklwr</title>
+        <title>
+          Rajkiran Kalwar - Full-Stack Developer | React.js, Next.js, Node.js,
+          Mobile App Development
+        </title>
         <meta
           name="description"
-          content="Welcome to the portfolio of Rajkiran Kalwar, a Full-Stack Developer specializing in React.js, Node.js, and mobile app development. Follow me on Instagram @iamrajklwr for insights and updates."
+          content="Explore the portfolio of Rajkiran Kalwar, a Full-Stack Developer specializing in React.js, Node.js, and mobile app development for iOS & Android. Let's work together to bring your ideas to life!"
         />
         <meta
           name="keywords"
-          content="Rajkiran Kalwar, iamrajklwr, Full-Stack Developer, React.js, Node.js, Mobile App Developer, iOS, Android"
+          content="Rajkiran Kalwar, iamrajklwr, Rajkiran Kalowar, Full-Stack Developer, React.js, Node.js, Mobile App Development, JavaScript, iOS Development, Android Development, Frontend Developer"
         />
         <link rel="canonical" href="https://www.iamrajklwr.com/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Rajkiran Kalwar",
+              jobTitle: "Full-Stack Developer",
+              url: "https://www.iamrajklwr.com/",
+              image: "https://www.iamrajklwr.com/images/profile-icon.png",
+              sameAs: [
+                "https://www.instagram.com/iamrajklwr/",
+                "https://www.linkedin.com/in/rajkiran-k-8455b615b/",
+                "https://github.com/raj-bhai",
+                "https://stackoverflow.com/users/12267809/rajkiran-kalowar",
+                "https://twitter.com/iamrajkalwar"
+              ],
+            }),
+          }}
+        />
       </Head>
       <main className="container mx-auto p-4 relative">
         {/* Hero Section */}
@@ -30,15 +53,12 @@ export default function Home() {
             software solutions.
           </p>
 
-          <Link
-            href="/about"
-            className="inline-block btn-primary "
-          >
+          <Link href="/about" className="inline-block btn-primary ">
             Learn More About Me
           </Link>
         </section>
 
-        <ServicesSection/>
+        <ServicesSection />
 
         <Skills />
 
@@ -53,10 +73,7 @@ export default function Home() {
             I&apos;m always open to discussing new projects, creative ideas, or
             opportunities to be part of your visions.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block btn-primary"
-          >
+          <Link href="/contact" className="inline-block btn-primary">
             Contact Me
           </Link>
         </section>
