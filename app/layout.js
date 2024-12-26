@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export const metadata = {
   title: "Rajkiran Kalwar - Full-Stack Developer | React.js, Next.js, Node.js, Mobile App Development",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
       <body className="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <Analytics/>
         <Header />
+        <WhatsAppIcon />
         <main className="container mx-auto pt-32 sm:pt-32 p-2 sm:p-4">{children}</main>
         <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 p-4 text-white text-center mt-4 shadow-md">
           &copy; {new Date().getFullYear()} Rajkiran Kalwar. All rights
