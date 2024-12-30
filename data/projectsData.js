@@ -32,6 +32,7 @@ const ProjectsData = [
       "Increased supplier engagement by 30%.",
       "50,000+ downloads within 6 months, with an average rating of 4.7.",
     ],
+    projectLink : "https://play.google.com/store/apps/details?id=in.zaadu.twa",
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ const ProjectsData = [
       "Increased supplier engagement by 30%.",
       "Successfully handled 50,000+ active users, with an average load time improvement of 40%.",
     ],
+    projectLink : "https://retailer.beyobo.com",
   },
   {
     id: 3,
@@ -69,7 +71,7 @@ const ProjectsData = [
     description:
       "EduConnect is a comprehensive digital solution designed for modern educational institutions. The platform provides three distinct roles—Admin, Teacher, and Student/Parent—catering to the unique needs of each. It simplifies academic and administrative processes through intuitive dashboards, real-time updates, and efficient tools. I contributed to developing the mobile app's frontend using React Native, focusing on creating an interactive and seamless user experience. Features like live class scheduling, instant results, fee management, and live tracking were meticulously implemented to ensure productivity and satisfaction for all users.",
     technologies: ["React Native", "Redux", "Firebase"],
-    screenshots: [], // Add screenshots as needed
+    screenshots: [], 
     role: "Frontend Developer",
     clientRequirements:
       "The client required a versatile educational platform with role-based access, integrated management tools for teachers and admins, real-time tracking and updates for parents, and an intuitive interface for students to access learning resources.",
@@ -246,6 +248,7 @@ const ProjectsData = [
       "Increased customer orders by 20% within the first month of launch.",
       "Mentored a junior developer, enabling them to enhance their backend skills with Node.js and DynamoDB.",
     ],
+    projectLink: "https://www.youtube.com/watch?v=tI289uitnjw",
   },
   {
     id: 7,
@@ -255,7 +258,7 @@ const ProjectsData = [
     description:
       "HealthSightTracker is a mobile healthcare app tailored to streamline patient management and provide secure access to medical data for doctors and attorneys. The app includes features like appointment scheduling, patient records management, and data visualization while ensuring compliance with healthcare regulations such as HIPAA.",
     technologies: ["React Native", "Node.js", "MySQL"],
-    screenshots: [], // Add actual screenshots if available
+    screenshots: [], 
     role: "Mobile App Developer, Backend Developer",
     clientRequirements:
       "The client required a mobile app for healthcare professionals with secure patient data handling, compliance with HIPAA regulations, and efficient database management.",
@@ -276,6 +279,7 @@ const ProjectsData = [
       "Achieved full compliance with HIPAA standards, ensuring data privacy and security.",
       "Received positive feedback for the app's simplicity and ease of use from healthcare professionals.",
     ],
+    projectLink : "https://healthsighttracker.com"
   },
   {
     id: 8,
@@ -312,6 +316,7 @@ const ProjectsData = [
       "Streamlined payment gateway integration with comprehensive testing.",
     ],
     results: [],
+    projectLink: "https://www.youtube.com/watch?v=T1bKEJ87p2g"
   },
 ];
 
