@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import ProjectsData from "@/data/projectsData";
 import ProjectDetail from "@/components/ProjectDetail";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -12,15 +13,18 @@ export default function ProjectPage() {
 
   if (!project) {
     return (
-      <div className="min-h-screen text-center pt-20">
+      <motion.div
+        className="min-h-screen text-center pt-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-xl font-semibold">Project Not Found</h2>
-      </div>
+      </motion.div>
     );
   }
 
-  const keywords = `${project.title}, ${project.technologies.join(", ")}, ${
-    project.role
-  }, ${project.introduction}`;
+  const keywords = `${project.title}, ${project.technologies.join(", ")}, ${project.role}, ${project.introduction}`;
 
   return (
     <>
@@ -29,10 +33,7 @@ export default function ProjectPage() {
         <meta name="description" content={project.description} />
         <meta name="keywords" content={keywords} />
         <meta name="author" content="Rajkiran Kalwar" />
-        <link
-          rel="canonical"
-          href={`https://www.iamrajklwr.com/projects/${id}`}
-        />
+        <link rel="canonical" href={`https://www.iamrajklwr.com/projects/${id}`} />
       </Head>
       <ProjectDetail project={project} />
     </>
