@@ -49,12 +49,12 @@ const ProjectsData = [
     keyChallenges: [
       "Ensuring Mobile-First Responsiveness.",
       "Scaling for High Traffic",
-      "Optimizing SEO for B2B Products"
+      "Optimizing SEO for B2B Products",
     ],
     solutionsAndApproach: [
       "Ensured mobile-first responsiveness by using a mobile-first design approach, leveraging media queries and responsive layouts to optimize the user experience across various devices and screen sizes.",
       "Scaled for high traffic by implementing server-side rendering (SSR) with Next.js, utilizing caching strategies, and optimizing backend APIs to handle increased demand during peak traffic times.",
-      "Optimized SEO for B2B products by implementing server-side rendering for better crawlability, adding structured data (JSON-LD) for products, and following best practices for metadata, URL structure, and keyword optimization."
+      "Optimized SEO for B2B products by implementing server-side rendering for better crawlability, adding structured data (JSON-LD) for products, and following best practices for metadata, URL structure, and keyword optimization.",
     ],
     results: [
       "Increased supplier engagement by 30%.",
@@ -63,40 +63,49 @@ const ProjectsData = [
   },
   {
     id: 3,
-    title: "AcadMate: An Innovative EdTech Solution",
+    title: "EduConnect - Transforming Education Management",
     introduction:
-      "A powerful mobile app transforming education for schools, coaching institutes, and educational organizations.",
+      "A cutting-edge platform to streamline school operations and enhance communication among students, parents, teachers, and administrators.",
     description:
-      "AcadMate is an all-in-one educational platform designed to simplify management for schools, coaching institutes, and educational organizations. It offers three types of accounts: Admin (for school/college/organization owners), Teacher, and Student. The app includes tools for managing assignments, tracking student progress, scheduling classes, communicating between students and educators, and much more. I developed the app frontend using React Native, ensuring an intuitive interface, real-time updates, and smooth performance. Firebase is integrated for authentication and database services.",
+      "EduConnect is a comprehensive digital solution designed for modern educational institutions. The platform provides three distinct roles—Admin, Teacher, and Student/Parent—catering to the unique needs of each. It simplifies academic and administrative processes through intuitive dashboards, real-time updates, and efficient tools. I contributed to developing the mobile app's frontend using React Native, focusing on creating an interactive and seamless user experience. Features like live class scheduling, instant results, fee management, and live tracking were meticulously implemented to ensure productivity and satisfaction for all users.",
     technologies: ["React Native", "Redux", "Firebase"],
     screenshots: [], // Add screenshots as needed
     role: "Frontend Developer",
     clientRequirements:
-      "The client wanted a comprehensive educational platform with user roles (Admin, Teacher, Student), assignment management, real-time updates, secure authentication, and a user-friendly design for educators and students.",
+      "The client required a versatile educational platform with role-based access, integrated management tools for teachers and admins, real-time tracking and updates for parents, and an intuitive interface for students to access learning resources.",
     myRole:
-      "I am responsible for implementing new functionalities as discussed with the client for the frontend, communicating with the backend team to integrate necessary APIs, and ensuring smooth user experiences across all roles (Admin, Teacher, Student).",
+      "I implemented key features for the frontend, collaborated with backend developers for API integration, and ensured smooth functionality across all user roles (Admin, Teacher, and Student/Parent).",
     features: [
-      "Admin dashboard for managing teachers, students, assignments, and communication",
-      "Teacher account with tools for creating and grading assignments, managing classes",
-      "Student account with access to assignments, progress tracking, and communication with teachers",
-      "Real-time messaging and notifications for students and teachers",
-      "Assignment submission, grading, and progress tracking",
-      "User authentication and role-based access management using Firebase"
+      "Admin dashboard for monitoring teachers, students, and overall school progress.",
+      "Teacher tools for managing classes, assignments, and student performance tracking.",
+      "Student dashboard with access to learning materials, timetables, and progress reports.",
+      "Parent portal to track student performance, attendance, and school activities.",
+      "Live and interactive classes for students.",
+      "360-degree performance reports for students and teachers.",
+      "Online fee payments for parents.",
+      "Live bus and student tracking.",
+      "Real-time updates via Firebase push notifications.",
+      "Digital content and LMS integration for seamless learning.",
+      "Automated attendance and schedule management.",
+      "User authentication and secure role-based access control.",
     ],
     keyChallenges: [
-      "Managing different user roles (Admin, Teacher, Student) and ensuring role-based access control.",
-      "Ensuring smooth real-time updates and communication between students and educators, especially in large organizations.",
-      "Optimizing the app's performance while handling a large amount of data and user interactions in real-time."
+      "Balancing functionality for diverse user roles while maintaining simplicity and usability.",
+      "Integrating real-time tracking and updates for live class scheduling and student activities.",
+      "Ensuring smooth performance with dynamic data across multiple user accounts.",
     ],
     solutionsAndApproach: [
-      "Implemented role-based access control to ensure each user (Admin, Teacher, Student) had appropriate permissions and functionality.",
-      "Used Firebase's real-time database and Firebase Cloud Messaging for efficient real-time communication between users.",
-      "Optimized performance with techniques like lazy loading, efficient data fetching, and state management using Redux to ensure smooth performance despite large data sets."
+      "Developed role-based access controls to tailor functionalities for Admin, Teacher, and Student/Parent accounts.",
+      "Leveraged Redux for efficient state management and Firebase for real-time updates and secure database services.",
+      "Implemented lazy loading and optimized API calls to handle large datasets without compromising performance.",
+      "Enhanced the UI with a clean, intuitive design to improve user experience across all devices.",
     ],
     results: [
-      // "Successfully launched the app with over 10,000 active users within 3 months.",
-      // "Received positive feedback from educators for the app's ease of use and helpful features."
-    ]
+      "Successfully launched the platform, gaining high engagement and positive feedback for its user-centric design and seamless functionality.",
+      "Improved operational efficiency for schools by automating routine tasks and enabling real-time updates.",
+      "Enhanced communication between students, parents, and teachers, fostering a more connected educational ecosystem.",
+    ],
+    projectLink : "https://edumaq.in/educonnect.php",
   },
   {
     id: 4,
@@ -105,7 +114,7 @@ const ProjectsData = [
       "An online platform designed for selling a single course with interactive features.",
     description:
       "Criativcity is a course-selling platform that allows users to purchase and complete a single course. The platform includes a comment section for discussions and interaction among users. After completing all the course modules, users can receive a certificate of completion. I developed the platform from scratch, focusing on user engagement, seamless certificate generation, and integration with Stripe for payment processing. The platform also allows users to resume the course from where they left off when they return.",
-    technologies: ["Next.js", "MongoDB", "Node.js", "AWS",],
+    technologies: ["Next.js", "MongoDB", "Node.js", "AWS"],
     screenshots: [],
     role: "Full Stack Developer",
     clientRequirements:
@@ -135,11 +144,12 @@ const ProjectsData = [
       "Interactive comment section for user engagement.",
     ],
   },
-  
+
   {
     id: 5,
     title: "Jyotish App: Personalized Astrology Consultations",
-    introduction: "A comprehensive mobile app offering personalized astrology services, including live consultations, horoscopes, poojas, and interactive features, designed to enhance user engagement and provide seamless communication with astrologers.",
+    introduction:
+      "A comprehensive mobile app offering personalized astrology services, including live consultations, horoscopes, poojas, and interactive features, designed to enhance user engagement and provide seamless communication with astrologers.",
     description:
       "The Jyotish app connects users with astrologers for consultations via chat, audio call, video call, and live streaming. I developed both the user and astrologer apps, ensuring features such as live sessions, real-time communication, a wallet system, secure payments, and the ability to send gifts to astrologers. The app offers users the ability to choose an astrologer, book sessions, access free services like kundali matching, receive daily horoscopes, and participate in online poojas. Astrologers can manage earnings and withdrawals. We used Agora for audio, video, and live streaming features, and Socket for real-time communication.",
     features: [
@@ -162,7 +172,14 @@ const ProjectsData = [
       "Send gifts feature for users to send virtual gifts to astrologers during live sessions as tokens of appreciation.",
       "Option for users to purchase and send gifts to astrologers through the app, adding an interactive element to the sessions.",
     ],
-    technologies: ["React Native", "Redux", "Firebase", "Agora", "Socket", "Razorpay"],
+    technologies: [
+      "React Native",
+      "Redux",
+      "Firebase",
+      "Agora",
+      "Socket",
+      "Razorpay",
+    ],
     screenshots: [],
     role: "Mobile App Developer",
     clientRequirements:
@@ -189,7 +206,7 @@ const ProjectsData = [
       "Achieved high user engagement with live streaming, daily horoscopes, free services like kundali matching, online pooja participation, and the interactive send gifts feature.",
       "App received positive feedback for smooth communication, secure payments, easy pooja booking system, and the fun send gifts feature.",
     ],
-  },  
+  },
   {
     id: 6,
     title: "Aahar App: US-based Indian Restaurant Ordering",
@@ -229,11 +246,12 @@ const ProjectsData = [
       "Increased customer orders by 20% within the first month of launch.",
       "Mentored a junior developer, enabling them to enhance their backend skills with Node.js and DynamoDB.",
     ],
-  },  
+  },
   {
     id: 7,
     title: "HealthSightTracker: US-based Healthcare Solution",
-    introduction: "A mobile healthcare app designed for doctors, management, and attorneys.",
+    introduction:
+      "A mobile healthcare app designed for doctors, management, and attorneys.",
     description:
       "HealthSightTracker is a mobile healthcare app tailored to streamline patient management and provide secure access to medical data for doctors and attorneys. The app includes features like appointment scheduling, patient records management, and data visualization while ensuring compliance with healthcare regulations such as HIPAA.",
     technologies: ["React Native", "Node.js", "MySQL"],
@@ -258,11 +276,12 @@ const ProjectsData = [
       "Achieved full compliance with HIPAA standards, ensuring data privacy and security.",
       "Received positive feedback for the app's simplicity and ease of use from healthcare professionals.",
     ],
-  },  
+  },
   {
     id: 8,
     title: "Indian Muslim Matrimony",
-    introduction: "A matrimony app designed to help Muslims in India find life partners.",
+    introduction:
+      "A matrimony app designed to help Muslims in India find life partners.",
     description:
       "Indian Muslim Matrimony is a platform that enables users to create profiles for themselves or their family members (e.g., siblings, children) and find suitable matches. The app ensures a secure and private matchmaking process with features such as detailed profiles, advanced search, and membership plans for enhanced functionality.",
     technologies: ["React Native", "Node.js", "Firebase"],
@@ -280,21 +299,20 @@ const ProjectsData = [
       "Send requests to view communication details like contact numbers.",
       "Free users can send a limited number of requests.",
       "Membership plans for unlimited requests and enhanced features.",
-      "Integration with PayUMoney for secure payment processing."
+      "Integration with PayUMoney for secure payment processing.",
     ],
     keyChallenges: [
       "Ensuring secure handling of sensitive user information.",
       "Optimizing the matchmaking algorithm for accuracy and performance.",
-      "Seamless integration of the PayUMoney payment gateway."
+      "Seamless integration of the PayUMoney payment gateway.",
     ],
     solutionsAndApproach: [
       "Implemented robust encryption for sensitive user data.",
       "Optimized matchmaking using a weighted preference-based algorithm.",
-      "Streamlined payment gateway integration with comprehensive testing."
+      "Streamlined payment gateway integration with comprehensive testing.",
     ],
-    results: []
-  }
-  
+    results: [],
+  },
 ];
 
 export default ProjectsData;

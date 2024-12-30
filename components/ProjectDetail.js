@@ -63,7 +63,9 @@ const ProjectDetail = ({ project }) => {
 
       {/* Technologies Used */}
       <div className="mb-8">
-        <strong className="text-2xl font-semibold mb-2">Technologies Used:</strong>
+        <strong className="text-2xl font-semibold mb-2">
+          Technologies Used:
+        </strong>
         <ul className="list-none flex flex-wrap gap-2">
           {project.technologies?.map((tech, index) => {
             const { icon: Icon, color } = TechnologyIcons[tech] || {};
@@ -106,17 +108,31 @@ const ProjectDetail = ({ project }) => {
       </div>
 
       {/* Results */}
-      {
-        project.results?.length ?
+      {project.results?.length ? (
         <div>
-        <h2 className="text-2xl font-semibold mb-2">Results</h2>
-        <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">
-          {project.results?.map((result, index) => (
-            <li key={index}>{result}</li>
-          ))}
-        </ul>
-      </div> : null
-      }
+          <h2 className="text-2xl font-semibold mb-2">Results</h2>
+          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">
+            {project.results?.map((result, index) => (
+              <li key={index}>{result}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+{/* Link to learn more */}
+{project.projectLink && (
+  <div className="mt-8 text-center">
+    <a
+      href={project.projectLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
+    >
+      Learn more about this project
+    </a>
+  </div>
+)}
+
     </section>
   );
 };
